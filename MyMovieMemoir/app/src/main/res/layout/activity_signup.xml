@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="4dp"
+
+        android:layout_marginRight="4dp"
+        android:text="   Username"
+        app:layout_constraintEnd_toStartOf="@+id/editUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:textSize="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="16dp"
+
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:textSize="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUsername" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="1dp"
+        android:text="Firstname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/editFirstname"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:textSize="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="1dp"
+        android:text="Surname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstname" />
+
+    <EditText
+        android:id="@+id/editSurname"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:textSize="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFirstname" />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="1dp"
+        android:text="Gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surname" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSurname">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="78dp"
+            android:layout_height="37dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+            android:text="Female" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="1dp"
+        android:text="Adress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gender" />
+
+    <EditText
+        android:id="@+id/editAdress"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:textSize="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adress"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/states"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="1dp"
+        android:text="States"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adress" />
+
+    <Spinner
+        android:id="@+id/stateSpinner"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:entries="@array/state_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAdress" />
+
+    <TextView
+        android:id="@+id/postcode"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="1dp"
+        android:text="Postcode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/states" />
+
+    <EditText
+        android:id="@+id/editPostcode"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="10dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stateSpinner" />
+
+    <TextView
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="1dp"
+        android:text="DoB"
+        android:id="@+id/dob"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postcode" />
+
+
+    <TextView
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text=""
+        android:id="@+id/dob1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPostcode" />
+
+    <DatePicker
+        android:id="@+id/dobPicker"
+        android:layout_width="412dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="100dp"
+        android:calendarViewShown="false"
+        android:theme="@android:style/Theme.Holo.Light"
+        app:layout_constraintBottom_toTopOf="@+id/createUser"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </DatePicker>
+
+    <Button
+        android:id="@+id/btnDob"
+        android:layout_width="183dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:text="Confirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dobPicker" />
+
+    <Button
+        android:id="@+id/createUser"
+        android:layout_width="156dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginBottom="4dp"
+        android:text="Sign up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="156dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="4dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvByCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/createUser"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="21dp"
+        android:text="check username"
+        app:layout_constraintBottom_toTopOf="@+id/tvByCourse"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
